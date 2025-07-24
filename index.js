@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 // import routes
-app.use('/api/items', itemRouter)
+app.use('/api/items/', itemRouter)
 
 
 dontenv.config();

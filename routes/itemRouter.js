@@ -1,5 +1,5 @@
 import express from 'express';
-import {createItem} from '../controllers/itemController';
+import {createItem} from '../controllers/itemController.js';
 // const {createItem} = require('../controllers/itemController.js');
 
 // decalare the itemRouter variable with express.Router() function
