@@ -3,6 +3,7 @@ import dontenv from 'dotenv';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import itemRouter from './routes/itemRouter.js'
+import monnifyRouter from './routes/monnifyRouter.js';
 
 const app = express();
 // middlewares
@@ -11,6 +12,7 @@ app.use(cors());
 
 // import routes
 app.use('/api/items/', itemRouter)
+app.use('/api/monnify', monnifyRouter);
 
 
 dontenv.config();
